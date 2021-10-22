@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epaper Adda</title>
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="icon" type="image/jpg" href="https://user-images.githubusercontent.com/72473589/123472363-b4721f00-d614-11eb-9daf-0d15c569d720.jpg"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-nav">
+
+
+        <ul>
+            <li><a class="ancr" href="/"><i class="fa fa-home"></i> Home</a></li>
+           
+            <li><a class="ancr" href="{% url 'about' %}"><i class="fa fa-info"></i> About</a></li>
+            <li><a class="ancr" href="{% url 'privacy' %}"><i class="fa fa-street-view"></i> Privacy</a></li>
+            <li><a class="ancr" href="{% url 'contact' %}"><i class="fa fa-phone"></i> Contact</a></li>
+            <li><a class="ancr" href="{% url 'downloads' %}"><i class="fa fa-comment"></i> Download</a></li>
+
+
+        </ul>
+
+    </div>
+
+
+
+{% block body %}-- Body --{% endblock body %}
+
+
+    <div class="footer">
+    <marquee behavior="" direction="left" class="mrq">Disclaimer: We dont hold any rights for the contents which are
+        provided here. All the contents are shared for the educational purpose only. Download links are only
+        forwarded which are already there on the internet.</marquee>
+     <h4>Some Links You can Follow to support effective quality of journalism:</h4>
+
+           
+            <a class="sublinks" href="https://epaper.thehindu.com/"> The Hindu</a>
+            <a class="sublinks" href="https://indianexpress.com/"> The Indian Express</a>
+            <a class="sublinks" href="https://epaper.hindustantimes.com/"> Hindustan Times</a>
+            <a class="sublinks" href="https://epaper.jagran.com/epaper/"> Dainik Jagran</a>
+            <a class="sublinks" href="https://economictimes.indiatimes.com"> Economic Times</a>
+           <br> <br>
+
+    
+     <i class="fa fa-copyright"></i> 2021-2022 Designed and Build with <i class="fa fa-heart"></i> by
+         Anonymous Squard
+
+    </div>
+</body>
+
+</html>

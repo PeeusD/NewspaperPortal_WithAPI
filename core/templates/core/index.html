@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block body %}
+
+    <img class="brand" src="{% static 'core/images/logo.png' %}" alt="EpaperAddaLogo">
+    
+
+    <div class="my_quotes">
+       
+        
+        <h2>
+           Today's Quote
+          
+        </h2>
+        <h1 id="quote" class="quote"></h1>
+        <i>
+            <h3 id="author" class="author"></h3>
+        </i>
+
+        <button  id ="btn_dwnld" class="btn_dwnld" type="button" onclick="document.location='{% url 'downloads' %}'">Downloads</button>
+
+    </div>
+    <script type='text/javascript' language='javascript' src='{% static 'core/js/myscript.js' %}'></script>
+    
+
+{% endblock body %}
+
+  

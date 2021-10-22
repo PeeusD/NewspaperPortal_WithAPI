@@ -1,0 +1,151 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="btn">
+
+        <a href="https://telegram.me/allepaperadda"><i class="fa fa-paper-plane"></i> Join Telegram </a>
+    </div>
+    <div class="box1 ">
+        <h1 class="name">
+            Hello Lovely Readers!
+            </h2>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                We are here to help you in attaining great heights for your success. We know what is the existence and how much english newspapers are
+                imperative in grabing the knowledge and in our daily life. So, for your simplicity here you will get pdfs for The hindu, Indian
+                Express,
+                The Financial Express, Hindustan Times, Times of India, Jansatta, Dainik Jagran, Deccan Chronicle,
+                Economic Times etc in one platform. These will gonna help you in
+                improving your english comprehension skills, reading habits, improving your general knowledge and to crack government or private exams as well.
+                 So what you are waiting for? 
+                 Just take the advantage, get succeed and convert your dreams to reality. Best of Luck for your endeavour
+                and have a great future !
+            </p>
+    </div>
+    <div class="bulletin">
+        <h2>
+            Download Bulletin Board
+        </h2>
+    </div>
+
+    <div class="container">
+
+
+        <div class="box">
+            <h2 class="name">
+                The Financial Express
+            </h2>
+            <a href="{% url 'fin' %}" class="download"> DOWNLOAD <i class="fa fa-download"></i>
+            </a>
+
+            <img src="{% static 'downloads/images/fin_exp.png' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                The Economic Times
+            </h2>
+            <a href="{% url 'eco' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/eco.jpg' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                The Indian Express
+            </h2>
+            <a href="{% url 'indexp' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/ind_exp.png' %}" class="product">
+        </div>
+
+
+        <div class="box">
+            <h2 class="name">
+                The Hindu
+            </h2>
+            <a href="{% url 'thehindu' %}" class="download" > DOWNLOAD <i class="fa fa-download"></i>
+            </a>
+
+            <img src="{% static 'downloads/images/th.jpg' %}" class="product">
+        </div>
+
+
+        <div class="box">
+            <h2 class="name">
+                The Business Line
+            </h2>
+            <a href="{% url 'businessline' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/busi.jpg' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                The Hindu Adfree
+            </h2>
+            <a href="" class="download" onclick=''>DOWNLOAD <i class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/thadfree.jpg' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                Deccan Chronicle
+            </h2>
+            <a href="{% url 'dec' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/dec_chro.jpg' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                The Hindustan Times
+            </h2>
+            <a href="{% url 'hintim' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/hin_tim.jpg' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                The Times Of India
+            </h2>
+            <a href="{% url 'toi' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/toi.png' %}" class="product">
+        </div>
+
+        <div class="box">
+            <h2 class="name">
+                The Tribune
+            </h2>
+            <a href="{% url 'tribune' %}" class="download" >DOWNLOAD <i
+                    class="fa fa-download"></i> </a>
+
+            <img src="{% static 'downloads/images/tri.jpg' %}" class="product">
+
+        </div>
+
+
+
+    </div>
+
+    <script type='text/javascript' language='javascript' src='{% static 'core/js/vanila.js' %}'></script>
+
+   
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+
+{% endblock body %}
