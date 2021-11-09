@@ -36,7 +36,31 @@
 
 {% block body %}-- Body --{% endblock body %}
 
+    {% block data_content %}
+    <div class="data-content">
+            <!--    #CHABGE THIS IN FUTURE TO "pcontent"     -->
 
+
+            <table id='tbl' class='tbl' style="width:100%">
+
+                <th>SL no.</th>
+                <th>Description</th>
+                <th> Download Links</th>
+                {% for date, link in dates.items %}
+                <tr>
+                    <td><i class="fa fa-pen"></i></td>
+                    <td>{{ date }}</td>
+                    <td> <a href="{{ link }}" class="cnt"> <i class="fa fa-download"></i></a></td>
+                </tr>
+            {% endfor %}
+            
+
+            </table>
+
+            <button  id ="btn_dwnld" class="btn_dwnld" type="button" onclick="document.location='/mega.html'">Alternative Download</button>
+
+    </div>
+    {% endblock data_content %}
 
         <marquee behavior="" direction="left" class="mrq">Disclaimer: We dont hold any rights for any contents which are
             provided here. All the contents are shared for the educational purpose only. Contents are only forwarded
